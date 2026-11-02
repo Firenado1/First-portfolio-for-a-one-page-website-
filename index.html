@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!--
+      TASK: Link a Google Font of your choice here.
+      Visit https://fonts.google.com, pick a font, and paste the <link> tag below.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&    display=swap" rel="stylesheet">
+
+
+    <!-- Link your stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ==============================
+         NAVBAR
+         Requirements:
+         - Use Flexbox to place the name/logo on the left and links on the right
+         - Make it sticky so it stays at the top when scrolling
+    ================================ -->
+    <header class="navbar">
+      <div class="navbar__logo">
+        <a href="#">COMMIT Technologies</a>
+      </div>
+
+      <nav class="navbar__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+
+    <!-- ==============================
+         HERO SECTION
+         Requirements:
+         - Full-width background (color or image)
+         - Large heading, short subtext, and a CTA button
+    ================================ -->
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <h1 class="hero__title">Hi, I'm <span>COMMIT Technologies</span></h1>
+        <p class="hero__subtitle">A passionate frontend developer who loves building things for the web.</p>
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         ABOUT SECTION
+         Requirements:
+         - Photo on one side, text on the other (side by side on desktop)
+         - Use Flexbox or Grid for the layout
+    ================================ -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__image">
+          <!--
+            You can replace this src with your own photo.
+            Placeholder: https://placehold.co/300x300
+          -->
+          <img src="Emma.jpeg" alt="A photo of YourName" />
+          <!-- <img src="https://placehold.co/300x300" alt="A photo of YourName" /> -->
+        </div>
+
+        <div class="about__text">
+          <h2>About Me</h2>
+          <!-- ABOUT ME TEXT -->
+          <p>
+            I'm an Electrical and Electronics Engineer with a Master's degree in <em>Telecommunication Engineering</em>. My academic and professional journey has given me a strong foundation in networking, communication systems, and technology.
+            <br />
+            Beyond telecommunications, I've developed an interest in web development and how digital experiences are designed and built. I'm currently expanding my skills in HTML and CSS, exploring how to turn ideas into functional, accessible, and responsive websites.
+
+          </p>
+          <p>
+            I enjoy learning, solving technical problems, and finding practical ways to use technology to make a difference.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         SKILLS SECTION
+         Requirements:
+         - At least 6 skill cards in a CSS Grid layout
+         - Each card should have a hover effect
+    ================================ -->
+    <section class="skills" id="skills">
+      <div class="skills__container">
+        <h2>My Skills</h2>
+
+        <div class="skills__grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Git</div>
+          <div class="skill-card">Figma</div>
+          <div class="skill-card">Responsive Design</div>
+          <!-- Add more skill cards if you like -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         PROJECTS SECTION
+         Requirements:
+         - At least 2 project cards in a CSS Grid layout
+         - Each card: cover image, title, description, and a link/button
+    ================================ -->
+    <section class="projects" id="projects">
+      <div class="projects__container">
+        <h2>My Projects</h2>
+
+        <div class="projects__grid">
+
+          <!-- Project Card 1 -->
+          <article class="project-card">
+            <img
+              src="project1.png"
+              alt="Screenshot of Project One"
+              class="project-card__image"
+            />
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project One</h3>
+              <p class="project-card__description">
+                A modern business website showcasing services, company information and contact details.
+              </p>
+              <a href="#" class="btn btn--secondary">View Project</a>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card">
+            <img
+              src="project2.jpg"
+              alt="Screenshot of Project Two"
+              class="project-card__image"
+            />
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project Two</h3>
+              <p class="project-card__description">
+                A visual representation of a dashboard monitoring network traffic, connected devices, bandwidth and network performance.
+              </p>
+              <a href="#" class="btn btn--secondary">View Project</a>
+            </div>
+          </article>
+
+          <!-- Add a third project card here if you like -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         CONTACT SECTION
+         Requirements:
+         - At least 3 social/contact links
+         - Style the links as buttons or icon-style links
+    ================================ -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out via any of the platforms below.</p>
+
+        <div class="contact__links">
+          <a href="mailto:emmanuelfakehinde.i@gmail.com.com" class="contact__link">Email</a>
+          <a href="https://github.com/" target="_blank" class="contact__link">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank" class="contact__link">LinkedIn</a>
+          <!-- Add more links if you like (Twitter/X, WhatsApp, etc.) -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         FOOTER
+         Requirements:
+         - Centered text
+         - Your name and copyright year
+    ================================ -->
+    <footer class="footer">
+      <p>&copy; 2026 COMMIT Technologies. All rights reserved.</p>
+    </footer>
+
+
+  </body>
+</html>
